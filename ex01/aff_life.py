@@ -12,7 +12,7 @@ def aff_life(country: str, path: str):
     if df is None:
         return
     try:
-        country_data = df.query("country == @country")  # Select rows where country is equal to my variable country
+        country_data = df.query("country == @country")
         if country_data.empty:
             print(f"Error: country {country} not found in dataset")
             return
